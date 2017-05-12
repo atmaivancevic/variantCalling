@@ -3,6 +3,9 @@
 # Example usage:
 # <variables> sbatch BWA-GATKHC.q
 
+#SBATCH -J BWA-GATKHC
+#SBATCH -o /fast/users/a1211880/slurmOUT/slurm-%j.out
+
 #SBATCH -A robinson
 #SBATCH -p batch
 #SBATCH -N 1
@@ -14,9 +17,6 @@
 #SBATCH --mail-type=END                                         
 #SBATCH --mail-type=FAIL                                        
 #SBATCH --mail-user=atma.ivancevic@adelaide.edu.au
-
-# define key variables
-export FASTDIR=/fast/users/$USER
 
 # load modules
 module load BWA/0.7.15-foss-2017a
