@@ -11,7 +11,7 @@
 #SBATCH -N 1
 #SBATCH -n 8
 #SBATCH --time=3-00:00 # change this to 3 days for real set
-#SBATCH --mem=50GB
+#SBATCH --mem=70GB
 
 # Notification configuration 
 #SBATCH --mail-type=END                                         
