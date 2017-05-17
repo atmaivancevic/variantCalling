@@ -59,7 +59,7 @@ if [ -z "$WORKDIR" ]; then # If no output directory then use current directory
 fi
 
 if [ -z "$prefixFile" ]; then # If a list of sequences was not supplied then extract from seq folder
-	prefixList=$(ls $SEQPATH | awk -F "_" '{print $1}' | uniq | sort) 
+	prefixList=$(ls $SEQPATH | awk -F "_" '{print $1}' | sort | uniq) 
 else
 	prefixList=$(cat $prefixFile)
 fi
