@@ -4,7 +4,7 @@
 # Variables that usually don't need changing once set for your system
 export FASTDIR=/fast/users/$USER
 
-gVcfFolder=$FASTDIR/vcf/gVcfDumpingGround # A place to dump gVCFs for later genotyping
+gVcfFolder=$FASTDIR/vcf/gVcfDumpingGround/Exomes # A place to dump gVCFs for later genotyping
 BWAINDEXPATH=/data/neurogenetics/RefSeq/BWA/hg19_1stM_unmask_ran_all # Your genome reference path for BWA
 BWAINDEX=hg19_1stM_unmask_ran_all.fa # name of the genome reference
 GATKPATH=$FASTDIR/executables/GenomeAnalysisTK-3.7 # Where the GATK program.  Be mindful that GATK is under rapid development so things may change over time!
