@@ -9,7 +9,7 @@
 usage()
 {
 echo "# A script to set off a series of parallel mapping and calling from a folder of fastq files.
-# Requires: BWA-GATKHC.sub and dependencies.  
+# Requires: BWA-GATKHC.forGenomes.q and dependencies.  
 #
 # Usage $0 -s /path/to/sequences [-p /path/to/prefix-file.txt][ -o /path/to/output] | [ - h | --help ]
 #
