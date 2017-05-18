@@ -7,7 +7,7 @@
 #SBATCH -o /fast/users/a1211880/slurmOUT/slurm-%j.out
 
 #SBATCH -A robinson
-#SBATCH -p batch
+#SBATCH -p highmem
 #SBATCH -N 1
 #SBATCH -n 24
 #SBATCH --time=3-00:00 # change this to 3 days for real set
