@@ -11,8 +11,7 @@ GATKPATH=$FASTDIR/executables/GenomeAnalysisTK-3.7 # Where the GATK program is. 
 GATKREFPATH=/data/neurogenetics/RefSeq/GATK # Refseq index library locations
 GATKINDEX=$BWAINDEX # Base name of GATK indexes (usually the same as the $BWAINDEX
 ChrIndexPath=$GATKREFPATH/$BWAINDEX.chridx # Location of index bed files
-IndexBedFiles=01.hg19-M1.bed,02.hg19-2-3.bed,03.hg19-4-5.bed,04.hg19-6-7.bed,05.hg19-8-10.bed,06.hg19-11-13.bed,07.hg19-14
-arrIndexBedFiles=$(echo $IndexBedFiles | tr "," "\n") 
+arrIndexBedFiles=$(ls $ChrIndexPath | grep of24.bed) # Turn the list into an array 
 PICARDPATH=$FASTDIR/executables/Picard-2.9.2 # Where the picard program is. Picard is also under rapid development so may change over time.
 DBSNP=dbsnp_138.hg19.vcf
 BUILD=$(echo $BWAINDEX | awk '{print substr($1, 1, length($1) - 3)}') # Genome build used = $BWAINDEX less the .fa, this will be incorporated into file names.
